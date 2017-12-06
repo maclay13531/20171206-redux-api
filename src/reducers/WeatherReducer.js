@@ -14,12 +14,15 @@
 export default function(state = null, action){ //reducer step 1,3 & 4
 	switch(action.type){
 		case "GET_WEATHER":
-			console.log(action);
-			console.log(action.payload);
-			console.log(action.payload.data);
+			// console.log(action);
+			// console.log(action.payload);
+			// console.log(action.payload.data);
+			return action.payload;
+			break;
 		//do some stuff
 		case "GET_STOCKS":
 		//do some other stuff
+			break;
 		default:
 		//IF neither case happens, do this
 			return state;

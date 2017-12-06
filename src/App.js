@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SearchBar from './containers/SearchBar';
+import Weather from './containers/Weather';
+import Stocks from './containers/Stocks';
 
 class App extends Component {
     render() {
@@ -9,6 +11,12 @@ class App extends Component {
             <div className="App">
                 <div className="container-fluid">
                     <SearchBar />
+                    <div className="col-sm-6">
+                        <Weather />
+                    </div>
+                    <div className="col-sm-6">
+                        <Stocks />
+                    </div>
                 </div>
             </div>
         );
